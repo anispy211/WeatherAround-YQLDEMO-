@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C7777C518C3B28900955AD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7777C418C3B28900955AD3 /* Foundation.framework */; };
+		8C7777C718C3B28900955AD3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7777C618C3B28900955AD3 /* CoreGraphics.framework */; };
+		8C7777C918C3B28900955AD3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7777C818C3B28900955AD3 /* UIKit.framework */; };
+		8C7777CF18C3B28900955AD3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C7777CD18C3B28900955AD3 /* InfoPlist.strings */; };
+		8C7777D118C3B28900955AD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7777D018C3B28900955AD3 /* main.m */; };
+		8C7777D518C3B28900955AD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7777D418C3B28900955AD3 /* AppDelegate.m */; };
+		8C7777DD18C3B28900955AD3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C7777DC18C3B28900955AD3 /* Images.xcassets */; };
+		8C7777E418C3B28900955AD3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7777E318C3B28900955AD3 /* XCTest.framework */; };
+		8C7777E518C3B28900955AD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7777C418C3B28900955AD3 /* Foundation.framework */; };
+		8C7777E618C3B28900955AD3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7777C818C3B28900955AD3 /* UIKit.framework */; };
+		8C7777EE18C3B28A00955AD3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C7777EC18C3B28A00955AD3 /* InfoPlist.strings */; };
+		8C7777F018C3B28A00955AD3 /* YqlDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C7777EF18C3B28A00955AD3 /* YqlDemoTests.m */; };
+		8C932A2518D004460066D889 /* ForecastModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C932A2418D004460066D889 /* ForecastModel.m */; };
+		8C932A2918D0087C0066D889 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C932A2718D0087C0066D889 /* DetailViewController.m */; };
+		8C932A2A18D0087C0066D889 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C932A2818D0087C0066D889 /* DetailViewController.xib */; };
+		8CFB741C18CF7D7100C576F7 /* locate_Arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CFB741B18CF7D7100C576F7 /* locate_Arrow.png */; };
+		8CFB742118CF8E8200C576F7 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CFB741F18CF8E8200C576F7 /* MainViewController.m */; };
+		8CFB742218CF8E8200C576F7 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CFB742018CF8E8200C576F7 /* MainViewController.xib */; };
+		8CFB742518CF8F1500C576F7 /* WeatherListCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CFB742418CF8F1500C576F7 /* WeatherListCustomCell.xib */; };
+		8CFB742718CF924C00C576F7 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CFB742618CF924C00C576F7 /* arrow.png */; };
+		8CFB742A18CF932C00C576F7 /* WeatherListCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CFB742918CF932C00C576F7 /* WeatherListCustomCell.m */; };
+		AB8790FF18CF21BB00914092 /* WeatherForecastDataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8790EE18CF21BB00914092 /* WeatherForecastDataFetcher.m */; };
+		AB87910018CF21BC00914092 /* CityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8790F118CF21BB00914092 /* CityModel.m */; };
+		AB87910118CF21BC00914092 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8790F518CF21BB00914092 /* MBProgressHUD.m */; };
+		AB87910218CF21BC00914092 /* SVGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8790F818CF21BB00914092 /* SVGeocoder.m */; };
+		AB87910318CF21BC00914092 /* SVPlacemark.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8790FA18CF21BB00914092 /* SVPlacemark.m */; };
+		AB87910718CF22EE00914092 /* Defines.h in Resources */ = {isa = PBXBuildFile; fileRef = AB87910618CF22A500914092 /* Defines.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C7777E718C3B28900955AD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C7777B918C3B28900955AD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C7777C018C3B28900955AD3;
+			remoteInfo = YqlDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8C7777C118C3B28900955AD3 /* YqlDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YqlDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C7777C418C3B28900955AD3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8C7777C618C3B28900955AD3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8C7777C818C3B28900955AD3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8C7777CC18C3B28900955AD3 /* YqlDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YqlDemo-Info.plist"; sourceTree = "<group>"; };
+		8C7777CE18C3B28900955AD3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8C7777D018C3B28900955AD3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8C7777D218C3B28900955AD3 /* YqlDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YqlDemo-Prefix.pch"; sourceTree = "<group>"; };
+		8C7777D318C3B28900955AD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8C7777D418C3B28900955AD3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8C7777DC18C3B28900955AD3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8C7777E218C3B28900955AD3 /* YqlDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YqlDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C7777E318C3B28900955AD3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8C7777EB18C3B28900955AD3 /* YqlDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YqlDemoTests-Info.plist"; sourceTree = "<group>"; };
+		8C7777ED18C3B28A00955AD3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8C7777EF18C3B28A00955AD3 /* YqlDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YqlDemoTests.m; sourceTree = "<group>"; };
+		8C932A2318D004460066D889 /* ForecastModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ForecastModel.h; path = yqldemo/Classes/BussinessLogic/Model/ForecastModel.h; sourceTree = SOURCE_ROOT; };
+		8C932A2418D004460066D889 /* ForecastModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ForecastModel.m; path = yqldemo/Classes/BussinessLogic/Model/ForecastModel.m; sourceTree = SOURCE_ROOT; };
+		8C932A2618D0087C0066D889 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		8C932A2718D0087C0066D889 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		8C932A2818D0087C0066D889 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		8CFB741B18CF7D7100C576F7 /* locate_Arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locate_Arrow.png; sourceTree = "<group>"; };
+		8CFB741E18CF8E8200C576F7 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		8CFB741F18CF8E8200C576F7 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		8CFB742018CF8E8200C576F7 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		8CFB742418CF8F1500C576F7 /* WeatherListCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeatherListCustomCell.xib; sourceTree = "<group>"; };
+		8CFB742618CF924C00C576F7 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		8CFB742818CF932C00C576F7 /* WeatherListCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherListCustomCell.h; sourceTree = "<group>"; };
+		8CFB742918CF932C00C576F7 /* WeatherListCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherListCustomCell.m; sourceTree = "<group>"; };
+		AB8790ED18CF21BB00914092 /* WeatherForecastDataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherForecastDataFetcher.h; sourceTree = "<group>"; };
+		AB8790EE18CF21BB00914092 /* WeatherForecastDataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherForecastDataFetcher.m; sourceTree = "<group>"; };
+		AB8790F018CF21BB00914092 /* CityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityModel.h; sourceTree = "<group>"; };
+		AB8790F118CF21BB00914092 /* CityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityModel.m; sourceTree = "<group>"; };
+		AB8790F418CF21BB00914092 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		AB8790F518CF21BB00914092 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		AB8790F718CF21BB00914092 /* SVGeocoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVGeocoder.h; sourceTree = "<group>"; };
+		AB8790F818CF21BB00914092 /* SVGeocoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGeocoder.m; sourceTree = "<group>"; };
+		AB8790F918CF21BB00914092 /* SVPlacemark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVPlacemark.h; sourceTree = "<group>"; };
+		AB8790FA18CF21BB00914092 /* SVPlacemark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVPlacemark.m; sourceTree = "<group>"; };
+		AB87910618CF22A500914092 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C7777BE18C3B28900955AD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C7777C718C3B28900955AD3 /* CoreGraphics.framework in Frameworks */,
+				8C7777C918C3B28900955AD3 /* UIKit.framework in Frameworks */,
+				8C7777C518C3B28900955AD3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C7777DF18C3B28900955AD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C7777E418C3B28900955AD3 /* XCTest.framework in Frameworks */,
+				8C7777E618C3B28900955AD3 /* UIKit.framework in Frameworks */,
+				8C7777E518C3B28900955AD3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C7777B818C3B28900955AD3 = {
+			isa = PBXGroup;
+			children = (
+				8C7777CA18C3B28900955AD3 /* YqlDemo */,
+				8C7777E918C3B28900955AD3 /* YqlDemoTests */,
+				8C7777C318C3B28900955AD3 /* Frameworks */,
+				8C7777C218C3B28900955AD3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C7777C218C3B28900955AD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C7777C118C3B28900955AD3 /* YqlDemo.app */,
+				8C7777E218C3B28900955AD3 /* YqlDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C7777C318C3B28900955AD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C7777C418C3B28900955AD3 /* Foundation.framework */,
+				8C7777C618C3B28900955AD3 /* CoreGraphics.framework */,
+				8C7777C818C3B28900955AD3 /* UIKit.framework */,
+				8C7777E318C3B28900955AD3 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C7777CA18C3B28900955AD3 /* YqlDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AB8790EA18CF21BB00914092 /* Classes */,
+				8C7777D318C3B28900955AD3 /* AppDelegate.h */,
+				8C7777D418C3B28900955AD3 /* AppDelegate.m */,
+				8C7777DC18C3B28900955AD3 /* Images.xcassets */,
+				8C7777CB18C3B28900955AD3 /* Supporting Files */,
+			);
+			path = YqlDemo;
+			sourceTree = "<group>";
+		};
+		8C7777CB18C3B28900955AD3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CFB741A18CF7D7100C576F7 /* Resource */,
+				8C7777CC18C3B28900955AD3 /* YqlDemo-Info.plist */,
+				8C7777CD18C3B28900955AD3 /* InfoPlist.strings */,
+				8C7777D018C3B28900955AD3 /* main.m */,
+				8C7777D218C3B28900955AD3 /* YqlDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8C7777E918C3B28900955AD3 /* YqlDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C7777EF18C3B28A00955AD3 /* YqlDemoTests.m */,
+				8C7777EA18C3B28900955AD3 /* Supporting Files */,
+			);
+			path = YqlDemoTests;
+			sourceTree = "<group>";
+		};
+		8C7777EA18C3B28900955AD3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB87910618CF22A500914092 /* Defines.h */,
+				8C7777EB18C3B28900955AD3 /* YqlDemoTests-Info.plist */,
+				8C7777EC18C3B28A00955AD3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8CFB741A18CF7D7100C576F7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8CFB742618CF924C00C576F7 /* arrow.png */,
+				8CFB741B18CF7D7100C576F7 /* locate_Arrow.png */,
+			);
+			name = Resource;
+			path = yqldemo/Resource;
+			sourceTree = SOURCE_ROOT;
+		};
+		8CFB741D18CF8E8200C576F7 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8CFB741E18CF8E8200C576F7 /* MainViewController.h */,
+				8CFB741F18CF8E8200C576F7 /* MainViewController.m */,
+				8CFB742018CF8E8200C576F7 /* MainViewController.xib */,
+				8C932A2618D0087C0066D889 /* DetailViewController.h */,
+				8C932A2718D0087C0066D889 /* DetailViewController.m */,
+				8C932A2818D0087C0066D889 /* DetailViewController.xib */,
+			);
+			name = MainViewController;
+			path = yqldemo/Classes/ViewControllers/MainViewController;
+			sourceTree = SOURCE_ROOT;
+		};
+		8CFB742318CF8EC300C576F7 /* CustomComponent */ = {
+			isa = PBXGroup;
+			children = (
+				8CFB742418CF8F1500C576F7 /* WeatherListCustomCell.xib */,
+				8CFB742818CF932C00C576F7 /* WeatherListCustomCell.h */,
+				8CFB742918CF932C00C576F7 /* WeatherListCustomCell.m */,
+			);
+			name = CustomComponent;
+			path = yqldemo/Classes/ViewControllers/CustomComponent;
+			sourceTree = SOURCE_ROOT;
+		};
+		AB8790EA18CF21BB00914092 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AB8790EB18CF21BB00914092 /* BussinessLogic */,
+				AB8790F218CF21BB00914092 /* Helper */,
+				AB8790FB18CF21BB00914092 /* ViewControllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AB8790EB18CF21BB00914092 /* BussinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				AB8790EC18CF21BB00914092 /* ManagerClass */,
+				AB8790EF18CF21BB00914092 /* Model */,
+			);
+			path = BussinessLogic;
+			sourceTree = "<group>";
+		};
+		AB8790EC18CF21BB00914092 /* ManagerClass */ = {
+			isa = PBXGroup;
+			children = (
+				AB8790ED18CF21BB00914092 /* WeatherForecastDataFetcher.h */,
+				AB8790EE18CF21BB00914092 /* WeatherForecastDataFetcher.m */,
+			);
+			path = ManagerClass;
+			sourceTree = "<group>";
+		};
+		AB8790EF18CF21BB00914092 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB8790F018CF21BB00914092 /* CityModel.h */,
+				AB8790F118CF21BB00914092 /* CityModel.m */,
+				8C932A2318D004460066D889 /* ForecastModel.h */,
+				8C932A2418D004460066D889 /* ForecastModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB8790F218CF21BB00914092 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				AB8790F318CF21BB00914092 /* ProgressHUD */,
+				AB8790F618CF21BB00914092 /* SVGeocoder */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		AB8790F318CF21BB00914092 /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				AB8790F418CF21BB00914092 /* MBProgressHUD.h */,
+				AB8790F518CF21BB00914092 /* MBProgressHUD.m */,
+			);
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
+		AB8790F618CF21BB00914092 /* SVGeocoder */ = {
+			isa = PBXGroup;
+			children = (
+				AB8790F718CF21BB00914092 /* SVGeocoder.h */,
+				AB8790F818CF21BB00914092 /* SVGeocoder.m */,
+				AB8790F918CF21BB00914092 /* SVPlacemark.h */,
+				AB8790FA18CF21BB00914092 /* SVPlacemark.m */,
+			);
+			path = SVGeocoder;
+			sourceTree = "<group>";
+		};
+		AB8790FB18CF21BB00914092 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8CFB742318CF8EC300C576F7 /* CustomComponent */,
+				8CFB741D18CF8E8200C576F7 /* MainViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C7777C018C3B28900955AD3 /* YqlDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C7777F318C3B28A00955AD3 /* Build configuration list for PBXNativeTarget "YqlDemo" */;
+			buildPhases = (
+				8C7777BD18C3B28900955AD3 /* Sources */,
+				8C7777BE18C3B28900955AD3 /* Frameworks */,
+				8C7777BF18C3B28900955AD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YqlDemo;
+			productName = YqlDemo;
+			productReference = 8C7777C118C3B28900955AD3 /* YqlDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C7777E118C3B28900955AD3 /* YqlDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C7777F618C3B28A00955AD3 /* Build configuration list for PBXNativeTarget "YqlDemoTests" */;
+			buildPhases = (
+				8C7777DE18C3B28900955AD3 /* Sources */,
+				8C7777DF18C3B28900955AD3 /* Frameworks */,
+				8C7777E018C3B28900955AD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C7777E818C3B28900955AD3 /* PBXTargetDependency */,
+			);
+			name = YqlDemoTests;
+			productName = YqlDemoTests;
+			productReference = 8C7777E218C3B28900955AD3 /* YqlDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C7777B918C3B28900955AD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = aniruddha;
+				TargetAttributes = {
+					8C7777E118C3B28900955AD3 = {
+						TestTargetID = 8C7777C018C3B28900955AD3;
+					};
+				};
+			};
+			buildConfigurationList = 8C7777BC18C3B28900955AD3 /* Build configuration list for PBXProject "YqlDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C7777B818C3B28900955AD3;
+			productRefGroup = 8C7777C218C3B28900955AD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C7777C018C3B28900955AD3 /* YqlDemo */,
+				8C7777E118C3B28900955AD3 /* YqlDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C7777BF18C3B28900955AD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB87910718CF22EE00914092 /* Defines.h in Resources */,
+				8CFB742218CF8E8200C576F7 /* MainViewController.xib in Resources */,
+				8C7777DD18C3B28900955AD3 /* Images.xcassets in Resources */,
+				8C932A2A18D0087C0066D889 /* DetailViewController.xib in Resources */,
+				8C7777CF18C3B28900955AD3 /* InfoPlist.strings in Resources */,
+				8CFB741C18CF7D7100C576F7 /* locate_Arrow.png in Resources */,
+				8CFB742518CF8F1500C576F7 /* WeatherListCustomCell.xib in Resources */,
+				8CFB742718CF924C00C576F7 /* arrow.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C7777E018C3B28900955AD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C7777EE18C3B28A00955AD3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C7777BD18C3B28900955AD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB87910318CF21BC00914092 /* SVPlacemark.m in Sources */,
+				8CFB742A18CF932C00C576F7 /* WeatherListCustomCell.m in Sources */,
+				AB87910118CF21BC00914092 /* MBProgressHUD.m in Sources */,
+				AB8790FF18CF21BB00914092 /* WeatherForecastDataFetcher.m in Sources */,
+				8CFB742118CF8E8200C576F7 /* MainViewController.m in Sources */,
+				8C7777D518C3B28900955AD3 /* AppDelegate.m in Sources */,
+				8C7777D118C3B28900955AD3 /* main.m in Sources */,
+				8C932A2918D0087C0066D889 /* DetailViewController.m in Sources */,
+				AB87910018CF21BC00914092 /* CityModel.m in Sources */,
+				8C932A2518D004460066D889 /* ForecastModel.m in Sources */,
+				AB87910218CF21BC00914092 /* SVGeocoder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C7777DE18C3B28900955AD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C7777F018C3B28A00955AD3 /* YqlDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C7777E818C3B28900955AD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C7777C018C3B28900955AD3 /* YqlDemo */;
+			targetProxy = 8C7777E718C3B28900955AD3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8C7777CD18C3B28900955AD3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C7777CE18C3B28900955AD3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8C7777EC18C3B28A00955AD3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C7777ED18C3B28A00955AD3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C7777F118C3B28A00955AD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8C7777F218C3B28A00955AD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C7777F418C3B28A00955AD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YqlDemo/YqlDemo-Prefix.pch";
+				INFOPLIST_FILE = "YqlDemo/YqlDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8C7777F518C3B28A00955AD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YqlDemo/YqlDemo-Prefix.pch";
+				INFOPLIST_FILE = "YqlDemo/YqlDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8C7777F718C3B28A00955AD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YqlDemo.app/YqlDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YqlDemo/YqlDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "YqlDemoTests/YqlDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8C7777F818C3B28A00955AD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/YqlDemo.app/YqlDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YqlDemo/YqlDemo-Prefix.pch";
+				INFOPLIST_FILE = "YqlDemoTests/YqlDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C7777BC18C3B28900955AD3 /* Build configuration list for PBXProject "YqlDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C7777F118C3B28A00955AD3 /* Debug */,
+				8C7777F218C3B28A00955AD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C7777F318C3B28A00955AD3 /* Build configuration list for PBXNativeTarget "YqlDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C7777F418C3B28A00955AD3 /* Debug */,
+				8C7777F518C3B28A00955AD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C7777F618C3B28A00955AD3 /* Build configuration list for PBXNativeTarget "YqlDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C7777F718C3B28A00955AD3 /* Debug */,
+				8C7777F818C3B28A00955AD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C7777B918C3B28900955AD3 /* Project object */;
+}
